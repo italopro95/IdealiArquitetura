@@ -1,0 +1,770 @@
+
+/*  RESET */
+
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 300;
+
+}
+
+a {
+   text-decoration: none;
+   color: #1a1919;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*  BOTÃO WHATSAPP  */
+
+.btn-whats {
+    width: 70px;
+    height: 70px;
+    font-size: 50px;
+    position: fixed;
+    bottom: 8%;
+    right: 1%;
+    background-color: #43BD52;
+    color: #fff;
+    text-align: center;
+    border-radius: 70px;
+    line-height: 70px;
+    z-index: 1900;
+}
+
+/*  ANIMAÇOES */
+
+.load {
+    animation: slide 1s;
+}
+
+
+.slider {
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 100%;
+   height: 100vh;
+   animation: slide  30s infinite;
+
+}
+
+
+@keyframes slide {
+
+    0% {
+        background-image: url(bg-img/img1.jpg);
+       
+    }
+    
+
+    20.% {
+        background-image: url(bg-img/img2.jpg);
+      
+
+    }
+
+
+    40% {
+        background-image: url(bg-img/img3.jpg);
+    }
+
+  
+
+    60% {
+        background-image: url(bg-img/img4.jpg);
+    }
+
+  
+
+    80% {
+        background-image: url(bg-img/img5.jpg);
+    }
+
+
+    100% {
+        background-image: url(bg-img/img1.jpg);
+    }
+}
+
+
+/*  CABEÇALHO  */
+
+
+.cabecalho {
+    width: 100%;
+    padding: 4% 5%;
+    float: left;
+}
+
+.logo {
+    font-size: 3em;
+    color: #131313;
+    text-transform: uppercase;
+    font-weight: 500;
+    float: left;
+
+}
+
+.logo strong {
+   font-weight: 700;
+}
+
+
+/* MENU */
+
+
+.btn-menu {
+    width: 55px;
+    height: 55px;
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #c0b8b859;
+    border-radius: 55px;
+    float: right;
+    text-align: center;
+    display: none;
+    margin: 0 5%;
+    position: relative;
+    z-index: 1800;
+   
+}
+
+
+
+.btn-menu:hover {
+    color: #fff;
+}
+
+
+.menu {
+    float: right;
+ 
+}
+
+.menu li {
+   float: left;
+   margin-left: 60px;
+   padding: 10px 0;
+   
+}
+
+.menu li a {
+    font-size: 1.3em;
+    color: #131313;
+    font-weight: 700;
+}
+
+.menu li a:hover {
+    border-top: 5px solid #131313;
+    transition: .2s;
+}
+
+
+/*  RODAPÉ  */
+
+
+.rodape {
+    width: 100%;
+    padding: 2% 5%;
+    float: left;
+    background-color: #131313;
+}
+
+.social-icons {
+    float: left;
+    font-size: 2.5em;
+}
+
+.social-icons a {
+    color: #c0b8b8;
+    margin-right: .7em;
+}
+
+.social-icons a:hover {
+    color: #ffff;
+}
+
+
+.contacts {
+    float: right;
+}
+
+.contacts li {
+    color: #c0b8b8;
+    text-align: right;
+    margin-top: .5em;
+}
+
+.copy {
+    width: 100%;
+    float: left;
+    padding: 5px 5%; 
+    background-color: #c0b8b8; 
+}
+
+.copy span {
+    font-weight: 700;
+}
+
+.copy span a:hover {
+    border-bottom: 1px solid #000000;
+}
+
+
+
+
+/* PAGINA DE PROJETOS */
+
+.projects {
+    background-color: #fafafa;
+}
+
+.principal {
+    width: 100%;
+    height: 100vh;
+    float: left;
+    padding: 2% 5%;
+    overflow: hidden;
+}
+
+.projects-imgs {
+    width: 100%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+#projetos {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    position: relative;
+
+}
+
+#projetos:nth-child(3) {
+    margin-right: 0;
+}
+
+#projetos p {
+    z-index: 1000;
+    position: absolute;
+    left: 50%;
+    top: 98%;
+    transform: translate(-50%,-98%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2em;
+    opacity: 0;
+   
+}
+
+#projetos img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+
+
+#projetos img:hover {
+    transition: .5s;
+    filter: grayscale(0);
+    filter: none;
+}
+
+#projetos:hover p {
+    transition: .5s;
+    opacity: 1;
+}
+
+.descricao-casa {
+    display: none;
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.descricao-casa img {
+    width: 50%;
+    height: 80vh;
+}
+
+.descricao-cozinha {
+    display: none;
+    width: 100%;
+    float: left;
+}
+
+.descricao-cozinha img {
+    width: 50%;
+    height: 80vh;
+}
+
+.descricao-fachada {
+    display: none;
+    width: 100%;
+    float: left;
+}
+
+.descricao-fachada img {
+    width: 50%;
+    height: 80vh;
+}
+
+
+
+.descricao {
+    width: 50%;
+    float: right;
+    padding: 0 0 0 10%;
+    
+
+}
+
+.descricao span {
+    float: right;
+    text-transform: capitalize;
+    color: #1313139c;
+}
+
+.ficha-tecnica li:nth-child(1), .equipe li:nth-child(1) {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    border-bottom: 2px solid #000;
+    padding-bottom: 4px;
+    margin-bottom: 12px;
+}
+
+.ficha-tecnica li {
+    color: #000000a6;
+    font-weight: 550;
+    margin-bottom: 1.5%;
+}
+
+.ficha-tecnica {
+    margin-bottom: 20px;
+}
+
+.equipe li:nth-child(2n+0) {
+    color: #000000a6;
+    font-weight: 550;
+}
+
+.equipe li {
+    margin-bottom: 1.5%;
+}
+
+
+
+/* ENDERECO */
+
+
+.endereco {
+    width: 100%;
+    height: 100vh;
+    padding: 4% 5%;
+    float: left;
+}
+
+.endereco iframe {
+    width: 50%;
+    float: left;
+}
+
+
+.contato {
+    width: 50%;
+    float: right;
+    padding: 0 0 0 10%;
+        
+}
+
+.contato h2 {
+   text-align: center;
+   font-weight: 700;
+   font-size: 1.8em;
+ 
+}
+
+
+.contato ul {
+    margin-top: 5%;
+}
+
+.contato li {
+    margin-top: 3%;
+    font-size: 1.2em;
+    color: #131313;
+    border-bottom: 1px solid #000;
+    text-align: left;
+
+}
+
+.contato i {
+    width: 30px;
+    font-size: 1.8em;
+}
+
+.contac {
+    margin-left: 7%;
+    
+}
+
+
+     /*  TELA MOBILE */
+
+
+@media screen  and (max-width: 760px){
+
+    .cabecalho {
+        padding: 4% 1%;
+    }
+      
+    .logo {
+       width: 250px;
+       height: 80px;
+       font-size: 0;
+       background: url(logo/logo-mobile-removebg-preview.png) center center/221px no-repeat;
+       border-radius: 221px;
+       margin: auto;
+       float: left;
+    }
+
+    .btn-menu {
+        display: inline-block!important;
+
+    }
+
+
+    .menu {
+        width: 50%;
+        height: 100vh;
+        float: right;
+        background-color: #131313c2;
+        position:  absolute;
+        right: 0;
+        top: 0;
+        text-align: right;
+        display: none;
+        z-index: 1500;
+    }
+
+  
+
+    .menu ul {
+        margin-top: 50%;
+        margin-right: 10%;
+    }
+
+    .menu li {
+        float: none;
+        padding: 5% 5% 5% 0;
+        margin: 15% 0;
+    }
+
+    .menu li a {
+        color: #c0b8b8;
+        padding: 0;
+        margin: 0;
+    }
+
+    .principal {
+        height: 100%;
+    }
+
+    #projetos {
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        padding: 0;
+        float: none;
+        margin-bottom: 8%;
+    }
+
+    #projetos img {
+        filter: grayscale(0);
+        filter: none;
+
+    }
+
+    #projetos:nth-child(3) {
+        margin-right: auto;
+    }
+
+
+
+    
+@keyframes slide {
+
+    0% {
+        background-image: url(bg-img-mobile/img1.jpg) ;
+
+    }
+    
+
+    20.% {
+        background-image: url(bg-img-mobile/img2.jpg);
+      
+
+    }
+
+
+    40% {
+        background-image: url(bg-img-mobile/img3.jpg);
+    }
+
+  
+
+    60% {
+        background-image: url(bg-img-mobile/img4.jpg);
+    }
+
+  
+
+    80% {
+        background-image: url(bg-img-mobile/img5.jpg);
+    }
+
+
+    100% {
+        background-image: url(bg-img-mobile/img1.jpg);
+    }
+}
+    
+
+   .contacts {
+       width: 100%;
+       float: left;
+       margin: 8% 0 5% 0;
+    }   
+     
+    .contacts li {
+        text-align: left;
+    }
+
+    .descricao-casa, .descricao-cozinha, 
+    .descricao-fachada {
+        margin: auto;
+        float: none;
+    }
+
+
+    .descricao-casa img, .descricao-cozinha img, 
+    .descricao-fachada img {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .descricao {
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin: 7%  0  5% 0;
+    }
+
+
+    /* ENDEREÇO */
+
+    .endereco {
+        height: 100%;
+        padding: 4% 5%;
+        float: left;
+    }
+
+
+    .endereco iframe {
+        width: 100%;
+    }
+
+    .contato {
+        width: 100%;
+        float: left;
+        padding: 0;
+        margin-top: 10%;
+            
+    }
+    
+   
+}
+
+
+@media screen and (min-width: 761px) {
+
+
+    .btn-whats {
+       width: 70px;
+       height: 70px;
+       font-size: 50px;
+       position: fixed;
+       bottom: calc(35% - 2px);
+       right: 1%;
+       background-color: #43BD52;
+       color: #fff;
+       text-align: center;
+       border-radius: 70px;
+       line-height: 70px;
+       z-index: 1900;
+    }
+
+    .btn-menu {
+       margin-right: 0;
+       display: inline-block!important;
+    }
+    
+
+    .menu {
+        width: 35%;
+        height: 100vh;
+        float: right;
+        background-color: #131313c2;
+        position:  absolute;
+        right: 0;
+        top: 0;
+        text-align: right;
+        display: none;
+        z-index: 1500;
+    }
+
+  
+
+    .menu ul {
+        margin-top: 50%;
+        margin-right: 10%;
+    }
+
+    .menu li {
+        float: none;
+        padding: 5% 5% 5% 0;
+        margin: 15% 0;
+    }
+
+    .menu li a {
+        color: #c0b8b8;
+        padding: 0;
+        margin: 0;
+    }
+
+    .principal {
+        height: 110vh;
+    }
+
+    #projetos {
+        width: 49%;
+        margin: 0 1% 0 0;
+    
+    }
+
+    #projetos img {
+        width: 100%;
+        height: 270px;
+    }
+
+    #projetos:nth-child(3) {
+        margin-top: 1%;
+    }
+
+   
+}
+
+
+@media screen and (min-width: 1050px) {
+
+    .menu {
+        width: 30%;
+    }
+
+    .menu ul {
+        margin-top: 40%;
+    }
+
+    .menu li {
+        padding: 1% 5% 1% 0;
+        margin: 15% 0;
+    }
+    
+}
+
+
+@media screen and (min-width: 1280px) {
+
+    .btn-menu {
+        display: none!important;
+    }
+
+    .menu {
+        display: inline-block!important;
+    }
+
+       
+    .menu {
+        float: right; 
+        width: initial;
+        height: 20px;
+        float: right;
+        position:  static;
+        text-align: initial;
+        z-index: 0;
+        background-color: initial;
+ 
+    }
+
+    .menu ul {
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .menu li {
+        float: left;
+        margin-top: 0;
+        margin-left: 60px;
+        padding: 10px 0;
+   
+    }
+
+     .menu li a {
+        font-size: 1.3em;
+        color: #131313;
+        font-weight: 700;
+    }
+
+    .menu li a:hover {
+        border-top: 5px solid #131313;
+        transition: .2s;
+    }
+
+    .principal {
+        height: 100vh;
+    }
+    
+    #projetos {
+        width: 32%;
+        margin: 0;
+        margin-right: 2%;
+    }
+
+    #projetos {
+        
+    }
+
+    #projetos:nth-child(3) {
+        margin-top: 0;
+    }
+
+
+}
